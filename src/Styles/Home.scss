@@ -6,31 +6,63 @@ body,
 .homeDark {
   background-color: $blackColor;
   color: white;
-  width: 100vw;
-  min-height: 100vh;
+  width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  // if these are not here, things will not center correctly
+  margin-left: 0px;
+  margin-bottom: 0px;
 }
 
 //fonts
-.hello, 
-.make, 
-.and, 
+.hello,
+.make,
+.and,
 .contact {
-    font-family: $darkMainFont;
+  font-family: $darkMainFont;
 }
 
 .level,
 .tagline {
-    font-family: $darkSubtitleFont;
+  font-family: $darkSubtitleFont;
 }
 
 .stackList {
-    font-family: $darkTaglineFont;
+  font-family: $darkTaglineFont;
 }
 
 .stack {
-    font-family: $darkSpecialFont
+  font-family: $darkSpecialFont;
+}
+
+//individual features
+hr {
+  margin: 3%;
+}
+
+img {
+  width: 100%;
+  max-height: 900px;
+}
+
+
+.darkKeyboard {
+  position: relative;
 }
 
 .hello {
-  font-size: 3rem;
+  align-self: flex-end;
+  padding-right: 3%;
+  font-size: 5rem;
+  position: absolute;
+}
+
+.tagline {
+  align-self: flex-end;
+  padding-right: 3%;
+  font-size: 2rem;
+  font-stretch: expanded;
+  position: absolute;
 }
