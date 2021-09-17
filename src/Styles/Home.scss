@@ -1,0 +1,36 @@
+@import "../Variables/Variables.scss";
+
+//background
+html,
+body,
+.homeDark {
+  background-color: $blackColor;
+  color: white;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+//fonts
+.hello, 
+.make, 
+.and, 
+.contact {
+    font-family: $darkMainFont;
+}
+
+.level,
+.tagline {
+    font-family: $darkSubtitleFont;
+}
+
+.stackList {
+    font-family: $darkTaglineFont;
+}
+
+.stack {
+    font-family: $darkSpecialFont
+}
+
+.hello {
+  font-size: 3rem;
+}

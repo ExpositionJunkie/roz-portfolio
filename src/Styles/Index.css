@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Auch 1";
+  src: local("Auch 1"), url("../fonts/auch/Auch 1.otf") format("opentype");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "Auch 2";
+  src: local("Auch 2"), url("../fonts/auch/Auch 2.otf") format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Auch 3";
+  src: local("Auch 3"), url("../fonts/auch/Auch 3.otf") format("opentype");
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: "Genesys";
+  src: local("Genesys"), url("../fonts/genesys/Genesys.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Glitch";
+  src: local("Glitch"), url("../fonts/glitch/Rubik-Glitch-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Radiotechnika";
+  src: local("Radiotechnika"), url("../fonts/radiotechnika/Radiotechnika.otf") format("opentype");
+  font-weight: normal;
+}
+/*# sourceMappingURL=Index.css.map */

@@ -1,0 +1,33 @@
+html,
+body,
+.homeDark {
+  background-color: #020004;
+  color: white;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.hello,
+.make,
+.and,
+.contact {
+  font-family: "Genesys";
+}
+
+.level,
+.tagline {
+  font-family: "Radiotechnika";
+}
+
+.stackList {
+  font-family: "Auch 1";
+}
+
+.stack {
+  font-family: "Glitch";
+}
+
+.hello {
+  font-size: 3rem;
+}
+/*# sourceMappingURL=Home.css.map */
