@@ -6,20 +6,21 @@ body,
   width: 100%;
   min-height: 100%;
   max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: -ms-grid;
+  display: grid;
   margin-left: 0px;
   margin-bottom: 0px;
+}
+
+.darkMarginWrap {
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 .hello,
 .make,
 .and,
+.solve,
 .contact {
   font-family: "Genesys";
 }
@@ -38,7 +39,7 @@ body,
 }
 
 hr {
-  margin: 3%;
+  margin: 2em;
 }
 
 img {
@@ -50,20 +51,95 @@ img {
   position: relative;
 }
 
-.hello {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  padding-right: 3%;
-  font-size: 5rem;
+.titleWrap {
+  -ms-grid-rows: 1fr, 1fr;
+      grid-template-rows: 1fr, 1fr;
   position: absolute;
+  margin-right: 10%;
+  margin-left: 10%;
+  padding-right: 1em;
+  right: 0;
+}
+
+.hello {
+  text-align: right;
+  font-size: 8vw;
 }
 
 .tagline {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  padding-right: 3%;
-  font-size: 2rem;
-  font-stretch: expanded;
-  position: absolute;
+  font-size: 3vw;
+  text-align: right;
+}
+
+.makeAndSolve {
+  display: -ms-grid;
+  display: grid;
+}
+
+.make {
+  font-size: 5.5vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: left;
+      justify-self: left;
+  padding-left: 2%;
+}
+
+.and {
+  font-size: 15vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.solve {
+  font-size: 5vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  padding-right: 2%;
+}
+
+.level {
+  font-size: 8vw;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.stackWrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  grid-column: auto;
+}
+
+.stack {
+  font-size: 8vw;
+  padding-left: 1em;
+}
+
+.stackList {
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  font-size: 3.5vw;
+  padding-right: 1em;
+}
+
+.contact {
+  padding-left: 5%;
+}
+
+.contactHead {
+  font-size: 5vw;
+}
+
+.contactLink {
+  font-size: 3vw;
 }
 /*# sourceMappingURL=Home.css.map */

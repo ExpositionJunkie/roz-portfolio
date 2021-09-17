@@ -9,17 +9,22 @@ body,
   width: 100%;
   min-height: 100%;
   max-width: 100%;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   // if these are not here, things will not center correctly
   margin-left: 0px;
   margin-bottom: 0px;
+}
+
+.darkMarginWrap {
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 //fonts
 .hello,
 .make,
 .and,
+.solve,
 .contact {
   font-family: $darkMainFont;
 }
@@ -39,7 +44,7 @@ body,
 
 //individual features
 hr {
-  margin: 3%;
+  margin: 2em;
 }
 
 img {
@@ -47,22 +52,88 @@ img {
   max-height: 900px;
 }
 
-
 .darkKeyboard {
   position: relative;
 }
 
-.hello {
-  align-self: flex-end;
-  padding-right: 3%;
-  font-size: 5rem;
+// Title
+.titleWrap {
+  grid-template-rows: 1fr, 1fr;
   position: absolute;
+  margin-right: 10%;
+  margin-left: 10%;
+  padding-right: 1em;
+  right: 0;
+}
+
+.hello {
+  text-align: right;
+  font-size: 8vw;
 }
 
 .tagline {
-  align-self: flex-end;
-  padding-right: 3%;
-  font-size: 2rem;
-  font-stretch: expanded;
-  position: absolute;
+  font-size: 3vw;
+  text-align: right;
+}
+
+// Make and Solve Card
+.makeAndSolve {
+  display: grid;
+}
+
+.make {
+  font-size: 5.5vw;
+  align-self: center;
+  justify-self: left;
+  padding-left: 2%;
+}
+
+.and {
+  font-size: 15vw;
+  align-self: center;
+  justify-self: center;
+}
+
+.solve {
+  font-size: 5vw;
+  align-self: center;
+  justify-self: right;
+  padding-right: 2%;
+}
+
+// LevelUp Card
+.level {
+  font-size: 8vw;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+// Stack List Card
+.stackWrap {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-column: auto;
+}
+
+.stack {
+  font-size: 8vw;
+  padding-left: 1em;
+}
+
+.stackList {
+  align-content: space-between;
+  font-size: 3.5vw;
+  padding-right: 1em;
+}
+
+// Contact Card
+.contact {
+  padding-left: 5%;
+}
+.contactHead {
+  font-size: 5vw;
+}
+
+.contactLink {
+  font-size: 3vw;
 }

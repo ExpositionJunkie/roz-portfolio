@@ -4,8 +4,11 @@ import "../../Styles/Home.css";
 function Home() {
   return (
     <div className="homeDark">
-      <h1 className="hello">Hi, I'm Roz</h1>
-      <h1 className="tagline">[fullstack MERN developer]</h1>
+      <div className="darkMarginWrap">
+      <div className="titleWrap">
+        <div className="hello">Hi, I'm Roz</div>
+        <div className="tagline">[fullstack MERN developer]</div>
+      </div>
 
       <div className="keyboardDark">
         <img
@@ -15,12 +18,11 @@ function Home() {
       </div>
 
       <hr></hr>
-      <div className="make">
-        <h2>I make things</h2>
-        <h1 className="and">&</h1>
-        <h2>solve problems</h2>
+      <div className="makeAndSolve">
+      <div className="make">I make things</div>
+      <div className="and">&</div>
+      <div className="solve">solve problems</div>
       </div>
-
       <hr></hr>
 
       <img
@@ -32,20 +34,28 @@ function Home() {
       <h1 className="level">Ready to level up your website?</h1>
       <hr></hr>
 
-      <div>
-        <h3 className="stack">S</h3>
-        <h3 className="stack">T</h3>
-        <h3 className="stack">A</h3>
-        <h3 className="stack">C</h3>
-        <h3 className="stack">K</h3>
-
-        <h4 className="stackList">
-          React <br></br>
-          React Native <br></br> Mongo <br></br> Express <br></br> Responsive
-          Design <br></br> Node js <br></br> Rest API <br></br> Sass / SCSS{" "}
-          <br></br>
-          Bootstrap <br></br> Figma <br></br> VBA <br></br>
-        </h4>
+      <div className="stackWrap">
+        <div className="stack">
+          <div>S</div>
+          <div>T</div>
+          <div>A</div>
+          <div>C</div>
+          <div>K</div>
+        </div>
+        <div className="stackList">
+          <li>React</li>
+          <li>React Native</li>
+          <li>Mongo & Mongoose</li>
+          <li>Express</li>
+          <li>Node JS</li>
+          <li>Responsive Design</li>
+          <li>Rest API</li>
+          <li>SCSS/SASS</li>
+          <li>Bootstrap</li>
+          <li>Figma</li>
+          <li>Requirement Gathering</li>
+          <li>VBA</li>
+        </div>
       </div>
 
       <hr></hr>
@@ -62,6 +72,7 @@ function Home() {
         <h5 className="contactLink">github.com/expositionjunkie</h5>
         <h5 className="contactLink">rosalindavalbrecht@gmail.com</h5>
         <h5 className="contactLink">linkedin.com/in/rozalbrecht</h5>
+      </div>
       </div>
     </div>
   );
