@@ -127,11 +127,20 @@ img {
 }
 
 // Contact Card
-.contact {
-  padding-left: 5%;
-}
 .contactHead {
   font-size: 5vw;
+}
+
+span {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  grid-auto-rows: min-content;
+  align-items: center;
+}
+
+.icon {
+  height: auto;
+  font-size: 4vw;
 }
 
 .contactLink {

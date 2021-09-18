@@ -131,12 +131,25 @@ img {
   padding-right: 1em;
 }
 
-.contact {
-  padding-left: 5%;
-}
-
 .contactHead {
   font-size: 5vw;
+}
+
+span {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10fr;
+      grid-template-columns: 1fr 10fr;
+  grid-auto-rows: -webkit-min-content;
+  grid-auto-rows: min-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon {
+  height: auto;
+  font-size: 4vw;
 }
 
 .contactLink {
