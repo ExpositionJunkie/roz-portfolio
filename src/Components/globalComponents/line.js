@@ -1,7 +1,7 @@
 import React from "react";
 import "../../Styles/Line.css";
 import { useSpring, animated } from "react-spring";
-import { rgb } from "@react-spring/shared";
+
 
 function Line() {
   const rainbowFadeLine = useSpring({

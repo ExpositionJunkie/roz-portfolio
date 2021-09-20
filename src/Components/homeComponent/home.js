@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons";
 import { useSpring, animated } from "react-spring";
-import { rgb } from "@react-spring/shared";
 import Line from "../globalComponents/line";
 
 function Home() {
