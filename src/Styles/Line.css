@@ -1,0 +1,11 @@
+.line {
+  margin: 3em;
+  max-width: 80vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  overflow-x: hidden;
+}
+/*# sourceMappingURL=Line.css.map */

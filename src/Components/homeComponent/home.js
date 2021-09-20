@@ -3,13 +3,36 @@ import "../../Styles/Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons";
+import { useSpring, animated } from "react-spring";
+import { rgb } from "@react-spring/shared";
+import Line from "../globalComponents/line";
 
 function Home() {
+  const rainbowFade = useSpring({
+    loop: true,
+    config: {
+      duration: 2000,
+    },
+    to: [
+      { opacity: 1, color: "rgb(255, 0, 0) " },
+      { opacity: 1, color: "rgb(255, 238, 0)" },
+      { opacity: 1, color: "rgb(255, 238, 0)" },
+      { opacity: 1, color: "rgb(21, 255, 0)" },
+      { opacity: 1, color: "rgb(0, 255, 208)" },
+      { opacity: 1, color: "rgb(0, 64, 255)" },
+      { opacity: 1, color: "rgb(128, 0, 255)" },
+      { opacity: 1, color: "rgb(255, 0, 140)" },
+    ],
+    from: { opacity: 1, color: "rgb(255, 0, 140)" },
+  });
+
   return (
     <div className="homeDark">
       <div className="darkMarginWrap">
         <div className="titleWrap">
-          <div className="hello">Hi, I'm Roz</div>
+          <animated.div style={rainbowFade} className="hello">
+            Hi, I'm Roz
+          </animated.div>
           <div className="tagline">[fullstack MERN developer]</div>
         </div>
 
@@ -20,22 +43,22 @@ function Home() {
           />
         </div>
 
-        <hr></hr>
+        <Line />
         <div className="makeAndSolve">
           <div className="make">I make things</div>
           <div className="and">&</div>
           <div className="solve">solve problems</div>
         </div>
-        <hr></hr>
+        <Line />
 
         <img
           src="/fiberOpticDark.jpg"
           alt="Fiber Optic wire backlit by purple blue and green LEDs."
         />
 
-        <hr></hr>
+        <Line />
         <h1 className="level">Ready to level up your website?</h1>
-        <hr></hr>
+        <Line />
 
         <div className="stackWrap">
           <div className="stack">
@@ -61,14 +84,14 @@ function Home() {
           </div>
         </div>
 
-        <hr></hr>
+        <Line />
 
         <img
           src="/lightBulbDark.jpg"
           alt="A light bulb backlit by orange and pink fire."
         />
 
-        <hr></hr>
+        <Line />
 
         <div className="contact">
           <h2 className="contactHead">contact</h2>
