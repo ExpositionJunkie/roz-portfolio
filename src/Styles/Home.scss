@@ -34,14 +34,6 @@ body,
   font-family: $darkSubtitleFont;
 }
 
-.stackList {
-  font-family: $darkTaglineFont;
-}
-
-.stack {
-  font-family: $darkSpecialFont;
-}
-
 //individual features
 
 img {
@@ -68,9 +60,20 @@ img {
   font-size: 8vw;
 }
 
+.hello:hover {
+  animation: glitch 450ms infinite;
+}
+
 .tagline {
   font-size: 3vw;
   text-align: right;
+  text-shadow: 0.05em 0.025em 0 rgba(255, 0, 0, 0.75),
+    -0.015em -0.025em 0 rgba(0, 255, 0, 0.75),
+    0.015em 0.025em 0 rgba(0, 0, 255, 0.75);
+}
+
+.tagline:hover {
+  animation: glitch 450ms infinite;
 }
 
 // Make and Solve Card
@@ -89,6 +92,16 @@ img {
   font-size: 15vw;
   align-self: center;
   justify-self: center;
+
+  text-shadow: 0.025em 0 0 rgba(255, 0, 0, 0.75),
+    -0.015em -0.025em 0 rgba(0, 255, 0, 0.75),
+    0.015em 0.025em 0 rgba(0, 0, 255, 0.75);
+
+  //animation: glitch 450ms infinite;
+}
+
+.and:hover {
+  animation: glitch 450ms infinite;
 }
 
 .solve {
@@ -103,24 +116,9 @@ img {
   font-size: 8vw;
   padding-left: 1em;
   padding-right: 1em;
-}
-
-// Stack List Card
-.stackWrap {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  grid-column: auto;
-}
-
-.stack {
-  font-size: 8vw;
-  padding-left: 1em;
-}
-
-.stackList {
-  align-content: space-between;
-  font-size: 3.5vw;
-  padding-right: 1em;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
 }
 
 // Contact Card
@@ -142,4 +140,104 @@ span {
 
 .contactLink {
   font-size: 3vw;
+}
+
+// Stack List Card
+.stackWrap {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-column: auto;
+}
+
+.stack {
+  font-size: 8vw;
+  padding-left: 1em;
+  font-family: $darkSpecialFont;
+
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+
+  animation: glitch 750ms infinite;
+}
+
+.stack span {
+  position: absolute;
+  z-index: -1;
+}
+
+.stack span:first-child {
+  animation: glitch 500ms infinite;
+}
+
+.stack span:last-child {
+  animation: glitch 375s infinite;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.025em 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.025em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em 0.025em 0 rgba(255, 0, 0, 0.75),
+      0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em 0.025em 0 rgba(255, 0, 0, 0.75),
+      0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+      0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+      0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      -0.05em 0.025em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+}
+
+.stackList {
+  align-content: space-between;
+  font-size: 3.5vw;
+  padding-right: 1em;
+  font-family: $darkTaglineFont;
+}
+
+li:hover {
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+
+  animation: glitch 450ms infinite;
+}
+
+// in case user does not want to see animations for some reason
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
 }

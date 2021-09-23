@@ -45,7 +45,9 @@ function Home() {
         <Line />
         <div className="makeAndSolve">
           <div className="make">I make things</div>
-          <div className="and">&</div>
+          <animated.div style={rainbowFade} className="and">
+            &
+          </animated.div>
           <div className="solve">solve problems</div>
         </div>
         <Line />
@@ -61,14 +63,24 @@ function Home() {
 
         <div className="stackWrap">
           <div className="stack">
-            <div>S</div>
-            <div>T</div>
-            <div>A</div>
-            <div>C</div>
-            <div>K</div>
+            <div>
+              <span aria-hidden="true" >S</span><span aria-hidden="true">S</span>S
+            </div>
+            <div>
+              <span aria-hidden="true">T</span><span aria-hidden="true">T</span>T
+            </div>
+            <div>
+              <span aria-hidden="true">A</span><span aria-hidden="true">A</span>A
+            </div>
+            <div>
+              <span aria-hidden="true">C</span><span aria-hidden="true">C</span>C
+            </div>
+            <div>
+              <span aria-hidden="true">K</span><span aria-hidden="true">K</span>K
+            </div>
           </div>
           <div className="stackList">
-            <li>React</li>
+            <li className="sl">React</li>
             <li>React Native</li>
             <li>Mongo & Mongoose</li>
             <li>Express</li>
