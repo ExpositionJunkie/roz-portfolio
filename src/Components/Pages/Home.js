@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons";
 import { useSpring, animated } from "react-spring";
-import Line from "../globalComponents/line";
+import Line from "../GlobalComponents/Line";
 
 function Home() {
   const rainbowFade = useSpring({
@@ -64,34 +64,39 @@ function Home() {
         <div className="stackWrap">
           <div className="stack">
             <div>
-              <span aria-hidden="true" >S</span><span aria-hidden="true">S</span>S
+              <span aria-hidden="true">S</span>
+              <span aria-hidden="true">S</span>S
             </div>
             <div>
-              <span aria-hidden="true">T</span><span aria-hidden="true">T</span>T
+              <span aria-hidden="true">T</span>
+              <span aria-hidden="true">T</span>T
             </div>
             <div>
-              <span aria-hidden="true">A</span><span aria-hidden="true">A</span>A
+              <span aria-hidden="true">A</span>
+              <span aria-hidden="true">A</span>A
             </div>
             <div>
-              <span aria-hidden="true">C</span><span aria-hidden="true">C</span>C
+              <span aria-hidden="true">C</span>
+              <span aria-hidden="true">C</span>C
             </div>
             <div>
-              <span aria-hidden="true">K</span><span aria-hidden="true">K</span>K
+              <span aria-hidden="true">K</span>
+              <span aria-hidden="true">K</span>K
             </div>
           </div>
           <div className="stackList">
             <li className="sl">React</li>
-            <li>React Native</li>
-            <li>Mongo & Mongoose</li>
-            <li>Express</li>
-            <li>Node JS</li>
-            <li>Responsive Design</li>
-            <li>Rest API</li>
-            <li>SCSS/SASS</li>
-            <li>Bootstrap</li>
-            <li>Figma</li>
-            <li>Requirement Gathering</li>
-            <li>VBA</li>
+            <li className="sl">React Native</li>
+            <li className="sl">Mongo & Mongoose</li>
+            <li className="sl">Express</li>
+            <li className="sl">Node JS</li>
+            <li className="sl">Responsive Design</li>
+            <li className="sl">Rest API</li>
+            <li className="sl">SCSS/SASS</li>
+            <li className="sl">Bootstrap</li>
+            <li className="sl">Figma</li>
+            <li className="sl">Requirement Gathering</li>
+            <li className="sl">VBA</li>
           </div>
         </div>
 

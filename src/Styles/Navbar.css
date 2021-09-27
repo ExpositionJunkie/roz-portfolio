@@ -1,0 +1,111 @@
+.navbar {
+  top: 0;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #020004;
+  width: 100vh;
+  height: 80px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+}
+
+.nav-menu {
+  background-color: #020004;
+  width: 250px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  -webkit-transition: 850ms;
+  transition: 850ms;
+}
+
+.nav-menu.active {
+  left: 0%;
+  -webkit-transition: 350ms;
+  transition: 350ms;
+  position: fixed;
+  width: 30vh;
+}
+
+.nav-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+  size: 2rem;
+  width: 35vh;
+}
+
+.nav-icon {
+  size: 15rem;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+  font-family: "Radiotechnika";
+  font-stretch: extra-expanded;
+}
+
+.nav-text a:hover {
+  background-color: #6000ba;
+}
+
+.nav-menu-items {
+  position: absolute;
+  top: 50px;
+  background-color: #020004;
+  z-index: 100;
+}
+
+/* .navbar-toggle {
+  background-color: $blackColor;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+ */
+span {
+  margin-left: 16px;
+}
+/*# sourceMappingURL=Navbar.css.map */

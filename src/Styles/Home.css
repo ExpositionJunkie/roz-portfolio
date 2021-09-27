@@ -155,8 +155,8 @@ span {
   padding-left: 1em;
   font-family: "Glitch";
   text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
-  -webkit-animation: glitch 750ms infinite;
-          animation: glitch 750ms infinite;
+  -webkit-animation: glitch 552ms infinite;
+          animation: glitch 552ms infinite;
 }
 
 .stack span {
@@ -165,13 +165,13 @@ span {
 }
 
 .stack span:first-child {
-  -webkit-animation: glitch 500ms infinite;
-          animation: glitch 500ms infinite;
+  -webkit-animation: glitch 731ms infinite;
+          animation: glitch 731ms infinite;
 }
 
 .stack span:last-child {
-  -webkit-animation: glitch 375s infinite;
-          animation: glitch 375s infinite;
+  -webkit-animation: glitch 373s infinite;
+          animation: glitch 373s infinite;
 }
 
 @-webkit-keyframes glitch {
@@ -230,7 +230,7 @@ span {
   font-family: "Auch 1";
 }
 
-li:hover {
+.sl:hover {
   text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
   -webkit-animation: glitch 450ms infinite;
           animation: glitch 450ms infinite;
