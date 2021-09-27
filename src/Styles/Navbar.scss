@@ -26,13 +26,10 @@
   position: fixed;
   top: 0;
   left: -100%;
-  transition: 850ms;
 }
 
-//want to replace this later with an animation from react spring if possible
 .nav-menu.active {
-  left: 0%;
-  transition: 350ms;
+  left: 0;
   position: fixed;
   width: 30vh;
 }
@@ -56,7 +53,6 @@
   text-decoration: none;
   color: $whiteColor;
   font-size: 18px;
-  width: 95%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -64,9 +60,9 @@
   border-radius: 4px;
   font-family: $darkSubtitleFont;
   font-stretch: extra-expanded;
+  width: 30vh;
 }
 
-//want to replace this later with an animation from react spring
 .nav-text a:hover {
   background-color: $accentColor;
 }
@@ -78,15 +74,6 @@
   z-index: 100;
 }
 
-/* .navbar-toggle {
-  background-color: $blackColor;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
- */
 span {
   margin-left: 16px;
 }
