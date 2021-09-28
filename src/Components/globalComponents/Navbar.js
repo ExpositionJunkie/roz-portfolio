@@ -5,7 +5,7 @@ import { SidebarData } from "./SidebarData";
 import { IconContext } from "react-icons";
 import "../../Styles/Navbar.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import { useTransition, animated } from "react-spring";
+import { useTransition, animated} from "react-spring";
 
 //tutorial nav and routing: https://www.youtube.com/watch?v=CXa0f4-dWi4
 

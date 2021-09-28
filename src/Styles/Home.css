@@ -1,6 +1,7 @@
 html,
 body,
 .homeDark {
+  margin-top: 40px;
   background-color: #020004;
   color: white;
   width: 100%;
@@ -33,6 +34,7 @@ body,
 img {
   width: 100%;
   max-height: 900px;
+  z-index: 1000;
 }
 
 .darkKeyboard {
@@ -76,6 +78,7 @@ img {
 }
 
 .make {
+  z-index: 100;
   font-size: 5.5vw;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -86,6 +89,7 @@ img {
 }
 
 .and {
+  z-index: 100;
   font-size: 15vw;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -101,6 +105,7 @@ img {
 }
 
 .solve {
+  z-index: 100;
   font-size: 5vw;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -254,4 +259,46 @@ span {
             transition-delay: 0s !important;
   }
 }
+
+/*
+//Parallax stuff
+.Parallax1 {
+  position: absolute;
+  margin-top: 30vh;
+  margin-left: 0;
+  z-index: 0;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background-color: rgba(35, 5, 53, 0.7);
+  box-shadow: 0 0 120px 60px rgb(4, 3, 22), 0 0 200px 120px rgb(97, 8, 97),
+    0 0 380px 180px rgb(26, 55, 218);
+}
+
+.Parallax2 {
+  position: absolute;
+  top: -5vh;
+  margin-left: 500px;
+  z-index: 0;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background-color: rgba(35, 5, 53, 0.7);
+  box-shadow: 0 0 120px 60px rgb(4, 3, 22), 0 0 200px 120px rgb(97, 8, 97),
+    0 0 380px 180px rgb(26, 55, 218);
+}
+
+.Parallax3 {
+  position: absolute;
+  top: 45vh;
+  margin-left: 80vw;
+  z-index: 0;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background-color: rgba(35, 5, 53, 0.7);
+  box-shadow: 0 0 120px 60px rgb(4, 3, 22), 0 0 200px 120px rgb(97, 8, 97),
+    0 0 380px 180px rgb(26, 55, 218);
+}
+*/
 /*# sourceMappingURL=Home.css.map */
